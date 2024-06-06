@@ -1,0 +1,83 @@
+html {
+    background: url(../Image/Introduction3_background.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+.Table1 {
+    border:20px solid rgb(148, 232, 131);
+    border-radius: 30px;
+    background-color: rgb(96, 255, 202);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color:white;
+}
+.Table2 {
+    border-bottom: 10px solid rgb(170, 255, 0);
+    width:50%;
+}
+
+.column_layout {
+    margin-top: 2rem;
+    display:flex;
+    gap: 20px;
+}
+
+.Table3, .Table4 {
+    background-color: rgb(255, 255, 174);
+    padding:1rem;
+}
+
+.Table3 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.Table4 {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Contact_Method {
+    margin-top:2rem;
+    padding:1rem;
+    background-color: rgb(186, 255, 255);
+    width:50%;
+    border-radius: 30px;
+}
+
+.Contact_Method li {
+    padding:1rem;
+    display:flex;
+}
+
+.Contact_Method i {
+    margin:0 1rem 0 0;
+    font-size: 1.5rem;
+}
+
+.Contact_Method a, .TimeTable a {
+    text-decoration: none;
+    color:rgb(0, 0, 255);
+}
+
+.Contact_Method a:hover, .TimeTable a:hover {
+    color:red;
+}
+
+.TimeTable {
+    display: flex;
+    justify-content: center;
+}
+
+.TimeTable h2 {
+    color:black;
+    padding:1rem;
+    background-color:  rgb(186, 255, 255);
+    border-radius: 30px;
+}

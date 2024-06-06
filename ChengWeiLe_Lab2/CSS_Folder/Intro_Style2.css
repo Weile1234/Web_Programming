@@ -1,0 +1,105 @@
+html {
+    background: url(../Image/black_background.jpg) no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: left;
+    padding:2rem;
+    width:30%;
+}
+
+h1 {
+    padding:0 0 1rem 0;
+    border-bottom: 1rem solid gray;
+    font-size: 3rem;
+    color:white;
+}
+
+.container {
+    padding:2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"Table1 Table2"
+                        "TimeTable Table3"
+                        "Contact Table4"
+}
+
+.Table1 {
+    grid-area: Table1;
+    background-color:rgb(190, 225, 255);
+    border-radius: 30px;
+    padding:0.5rem;
+    width:100%;
+}
+
+.Table1 img {
+    border-radius: 30px;
+}
+
+.Table2 {
+    grid-area: Table2;
+}
+
+.Table2 h2 {
+    background-color: azure;
+    padding:1rem;
+    border-radius: 30px;
+
+}
+
+.Table3 {
+    grid-area: Table3;
+    background-color: rgb(200, 200, 200);
+    border-top: 20px solid  rgb(200, 200, 200);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.Table4 {
+    grid-area: Table4;
+    background-color:  rgb(200, 200, 200);
+    border-bottom: 20px solid  rgb(200, 200, 200);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Contact_Method {
+    margin-top:1rem;
+    background-color: rgb(160, 237, 240);
+    grid-area: Contact;
+    padding:1rem;
+    width:100%;
+    border-radius: 30px;
+}
+
+.Contact_Method li {
+    padding:1rem;
+    display:flex;
+}
+
+.Contact_Method i {
+    margin:0 1rem 0 0;
+    font-size: 1.5rem;
+}
+
+.Contact_Method a, .TimeTable a {
+    text-decoration: none;
+    color:rgb(0, 0, 255);
+}
+
+.Contact_Method a:hover, .TimeTable a:hover {
+    color:red;
+}
+
+.TimeTable {
+    margin-top: 1rem;
+    background-color: rgb(191, 234, 234);
+    grid-area: TimeTable;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+

@@ -1,0 +1,106 @@
+html {
+    background-image: url(../Image/wood_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:2rem;
+}
+header {
+    width: 50%;
+    height:10vh;
+    padding:2rem;
+    background-image: url(../Image/Table1_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 100%;
+    margin:auto;
+    transform: rotate(-2deg);
+}
+
+
+
+.Table1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(252, 143, 41);
+    border-radius: 20px;
+    padding:1rem;
+    justify-content: center;
+}
+
+.Table1_Content {
+    text-align: center;
+    background-color: rgb(233, 167, 120);
+    border-radius: 30px;
+}
+
+.Table2 {
+    height:10vh;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Table2 h2 {
+    padding:1rem;
+    border:0.5rem solid rgb(255, 153, 0);
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+.Decoration img {
+    height:15vh;
+    width:30%;
+}
+
+
+.Table3, .Table4 {
+    background-color: aliceblue;
+    padding:1rem;
+    border:0.5rem solid gray;
+    border-radius: 30px;
+}
+
+.Table4 {
+    margin-top: 1rem;
+}
+
+.Contact_Method {
+    border: 0.5rem solid orange;
+    border-radius: 20px;
+    padding:1rem;
+    margin-top: 2rem;
+    background-color: antiquewhite;
+}
+
+.Contact_Method li {
+    padding:1rem;
+    display:flex;
+}
+
+.Contact_Method i {
+    margin:0 1rem 0 0;
+    font-size: 1.5rem;
+}
+
+.Contact_Method a, .TimeTable a {
+    text-decoration: none;
+}
+
+.Contact_Method a:hover, .TimeTable a:hover {
+    color:red;
+}
+
+.TimeTable {
+    display:flex;
+    justify-content: center;
+}
+
+.TimeTable h2 {
+    background-color: rgb(218, 224, 165);
+    border: 0.5rem solid rgb(255, 242, 0);
+    border-radius: 20px;
+    padding:2rem;
+}
+
+
