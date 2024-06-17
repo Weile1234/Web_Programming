@@ -1,7 +1,7 @@
-ChengWeiLe_Lab2:
-<a href="https://weile1234.github.io/Web_Programming/ChengWeiLe_Lab2/Introtduction.html">Introduction Page</a>
-<a href="https://weile1234.github.io/Web_Programming/ChengWeiLe_Lab2/Timetable.html">TimeTable Page</a>
-<a href="https://weile1234.github.io/Web_Programming/ChengWeiLe_Lab2/register.html">register Page</a>
+ChengWeiLe_Lab2:<br>
+<a href="https://weile1234.github.io/Web_Programming/ChengWeiLe_Lab2/Introtduction.html">Introduction Page</a><br>
+<a href="https://weile1234.github.io/Web_Programming/ChengWeiLe_Lab2/Timetable.html">TimeTable Page</a><br>
+<a href="https://weile1234.github.io/Web_Programming/ChengWeiLe_Lab2/register.html">register Page</a><br>
 
 
 
