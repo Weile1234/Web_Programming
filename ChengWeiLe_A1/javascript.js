@@ -86,7 +86,7 @@ async function Dealing_Card() {
 function Display_Player_Card(Card_of_Player) {
     let PlayerHandCard = document.getElementById("Player_Hand_Card");
     let img = document.createElement("img");
-    img.src = 'img/' + Card_of_Player +'.jpg';
+    img.src = 'Img/' + Card_of_Player +'.jpg';
     PlayerHandCard.appendChild(img);
 }
 
@@ -147,7 +147,7 @@ function Calculate_Player_Total(PlayerCard) {
 function Display_Computer_Real_Card() {
     let ComputerHandCard = document.getElementById("Computer_Hand_Card");
     for (let i = 0; i < ComputerCard.length; i++) {
-        ComputerHandCard.children[i].src = "img/" + ComputerCard[i] + ".jpg";
+        ComputerHandCard.children[i].src = "Img/" + ComputerCard[i] + ".jpg";
     }
 }
 
