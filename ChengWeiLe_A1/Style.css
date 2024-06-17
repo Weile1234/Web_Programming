@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+body {
+    color:White;
+    background: url(Img/Background.jpg) center no-repeat;
+    background-size: cover;
+    font-family: "DM Serif Text", serif;
+}
+
+h1 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: "DM Serif Text", serif;
+}
+
+
+#Player_Hand_Card, #Computer_Hand_Card,#Deck {
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    height:20vh;
+    width:auto;
+    justify-content: center;
+}
+
+#Deck{
+    margin:2rem;
+}
+
+#Deck img {
+    position:absolute;
+    left:20%;
+    z-index: 1;
+    height:20vh;
+}
+
+#Start_Button {
+    display:flex;
+    align-items: center;
+}
+
+#Button_Area {
+    
+    position:fixed;
+    bottom:0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-bottom:2.5rem;
+}
+
+#DrawCard, #EndTurn, #Start_Again {
+    color: white;
+    height:10vh;
+    border-radius: 35px;
+    border: white;
+    padding:1rem;
+    font-family: "DM Serif Text", serif;
+}
+
+#Start_Again {
+    background-color: rgb(149, 255, 0);
+    width:200px;
+    font-size: 1.5rem;
+    color:black;
+}
+
+#DrawCard {
+    background-color:blue;
+    font-size: 1rem;
+    display:none;
+    margin-right:2rem;
+}
+
+#EndTurn {
+    background-color:red;
+    font-size: 1rem;
+    display:none;
+    margin-left:2rem;
+}
+
+
+/* Start of History Part */
+
+#History_Button {
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+}
+
+
+#Check_History_Button,#Close_History_Button,#Clear_History_Button {
+    background-color: yellow;
+    padding:1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-family: "DM Serif Text", serif;
+}
+
+#Close_History_Button,#Clear_History_Button {
+    display: none;
+}
+
+#History_Page,#Change_Card_Backside_Page {
+    width:80%;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+#History_Table,#Data_Collected {
+    width:60%;
+    background-color: white;
+    color:black;
+}
+#History_Table {
+    padding:1rem 1rem 0 1rem;
+    border-top: 10px solid grey;
+    border-left: 10px solid grey; 
+    border-right: 10px solid grey;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+#Data_Collected {
+    padding:0 1rem 1rem 1rem;
+    border-bottom: 10px solid grey;
+    border-left: 10px solid grey; 
+    border-right: 10px solid grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#History_Index {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+
+#Data_Collected {
+    font-size: 1rem;
+    font-family: "DM Serif Text", serif;
+}
+
+/* End of History Part*/
+
+/*Start of Backside Part */
+#Backside_Button {
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+    top:15%;
+}
+
+#Close_Backside_Page_Button {
+    display:none;
+}
+
+#Close_Backside_Page_Button,#Open_Backside_Page_Button {
+    background-color: aqua;
+    padding:1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-family: "DM Serif Text", serif;
+}
+
+#Change_Card_Backside_Table {
+    background-color: white;
+    padding:2rem;
+    color: black;
+    text-align: center;
+    border: 10px solid grey;
+    border-radius: 30px;
+}
+
+#Change_Card_Backside_Table img {
+    max-width: 100px;
+    margin:1rem 1rem 2rem 1rem;
+}
+
+#Change_Backside_Button {
+    border-radius: 30px;
+    background-color: burlywood;
+    width:80%
+}
+
+button:hover {
+    filter: brightness(65%);
+}
+
+
+/* Start of Animation*/
+
+@keyframes Player_Draw_Card_Animation {
+    0% {
+        transform: translateY(200px) rotate(0deg); /* 初始位置，向上偏移并旋转 */
+        opacity: 0; /* 初始透明度为0 */
+    }
+    100% {
+        transform: translateY(0) rotate(0deg); /* 最终位置，不偏移不旋转 */
+        opacity: 1; /* 最终透明度为1 */
+    }
+}
+
+@keyframes Player_Draw_Card_From_Deck_Animation {
+    0% {
+        transform: translateY(0px) rotate(-180deg); /* 初始位置，向上偏移并旋转 */
+        opacity: 1; /* 初始透明度为0 */
+    }
+    100% {
+        transform: translateX(180px) translateY(200px) rotate(0deg); /* 最终位置，不偏移不旋转 */
+        opacity: 0; /* 最终透明度为1 */
+    }
+}
+
+@keyframes Computer_Draw_Card_Animation {
+    0% {
+        transform: translateY(-200px) rotate(0deg); /* 初始位置，向上偏移并旋转 */
+        opacity: 0; /* 初始透明度为0 */
+    }
+    100% {
+        transform: translateY(0) rotate(0deg); /* 最终位置，不偏移不旋转 */
+        opacity: 1; /* 最终透明度为1 */
+    }
+}
+
+@keyframes Computer_Draw_Card_From_Deck_Animation {
+    0% {
+        transform: translateY(0px) rotate(180deg); /* 初始位置，向上偏移并旋转 */
+        opacity: 1; /* 初始透明度为0 */
+    }
+    100% {
+        transform: translateX(180px) translateY(-200px) rotate(0deg); /* 最终位置，不偏移不旋转 */
+        opacity: 0; /* 最终透明度为1 */
+    }
+}
+/* End of Animation */
+
+@media screen and (max-width: 768px) {
+
+    
+    #Start_Again {
+        position: fixed;
+        bottom: 2%; 
+        left: 25%;
+        transform: translateX(-50%);
+        width:45%;
+    } 
+    
+    #History_Button {
+        bottom:10%;
+        right:5%;
+    }
+
+    #Backside_Button {
+        top:90%;
+        right:5%;
+    }
+
+    #Deck img {
+        height:15vh;
+    }
+
+    #Player_Hand_Card, #Computer_Hand_Card, #Deck {
+        height:15vh;
+    }
+}
